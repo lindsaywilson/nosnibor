@@ -58,6 +58,8 @@ var backimage = $(".backstretch img").attr('src');
  $.backstretch(backimage);
 var backimage2 = $('.artwork-item:last a').attr('href');
 $.backstretch(backimage2);
+var backimagenews = $('.page-type-feature-blog .field-name-field-artwork img').attr('src');
+$.backstretch(backimagenews);
 // V2. scroller & background video
 //-----------------------------------------------------------//
 if (width > 480) {

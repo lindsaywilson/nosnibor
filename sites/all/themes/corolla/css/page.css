@@ -474,7 +474,8 @@ ul.quicktabs-tabs.quicktabs-style-navlist li { margin-left: 0em; font-family: "D
 .section-artwork-gallery #backstretch,
 .section-archive #backstretch,
 .section-404 #backstretch, 
-.fancybox-overlay-bg { 
+.fancybox-overlay-bg,
+.page-type-feature-blog #backstretch { 
     opacity: 0.1; filter: alpha(opacity=10); -moz-opacity: 0.1; -khtml-opacity: 0.1;
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
@@ -576,9 +577,11 @@ ul.quicktabs-tabs.quicktabs-style-navlist li { margin-left: 0em; font-family: "D
 .front .flexslider .text{ position:absolute; top:60px; left:60px; color:#fff;}
 .front .flexslider p{ margin:0}
 .front .flexslider .heading{ color:#fff; font-size:3.6em; line-height:1em; margin-bottom:30px; font-family:'volkswagen'; text-transform:uppercase}
+.front .flexslider .heading a{color:#fff}
 .front .flexslider .body{ font-size:14px; width:470px; color:#fff; font-family:'dado'}
 .front .flexslider .readmore a{ display:block; margin-top:30px; color:#ff952b; }
-.front .flex-control-nav{ bottom:-10px; background:#120000; display:none; height:19px; padding-top:11px}
+.front .flex-control-nav{ bottom:-10px; background:#120000; height:24px; padding-top:0; display:none}
+.front .flex-control-paging li{ margin: 8px 6px 0}
 .front .flex-control-paging li a{ background:#ff952b; box-shadow:none; width:8px; height:8px}
 .front .flex-control-paging li a.flex-active{background:#fff}
 .view-hero-images .views-field-edit-node{ position:absolute; top:0; background:#120000}
@@ -616,21 +619,24 @@ ul.quicktabs-tabs.quicktabs-style-navlist li { margin-left: 0em; font-family: "D
 .article.article-feature-blog h1 p{ margin:0}
 
 .article-feature-blog .field.field-name-body p{ margin-bottom:30px}
-.page-type-feature-blog article h2{ color:#fff}
+.page-type-feature-blog article h2{ color:#fff; margin-top:4px}
 .page-type-feature-blog .article-type-artwork .field{ color:#666666}
 
 .article-feature-blog.ds-2col-stacked .group-left{ float:left; width:70%}
 .article-feature-blog.ds-2col-stacked .group-right{ float:right; width:15%}
 .article-feature-blog.ds-2col-stacked .group-main{ position:relative}
-.article-feature-blog ul.links { bottom: 0; margin: 0; position: absolute; right: 0;}
+.article-feature-blog ul.links { bottom: 37px; height:16px; margin: 0; position: absolute; right: 0;}
 
+.article-feature-blog .article-inner > header{ display:none}
 .article-feature-blog .article-type-artwork .field.field-name-title-field,
 .article-feature-blog .article-type-artwork .field{ width:auto; float:none; margin:0; padding:0; border:none}
+.article-feature-blog .article-type-artwork .field-name-field-artwork{ display:none}
 
 .article-feature-blog .field-collection-container{ clear:both; border-top:1px solid #666666;border-bottom:none }
 .article-feature-blog .field-collection-view{ margin:0; padding:0; border:none }
 .article-feature-blog .field.field-name-field-description{text-align:center; padding:20px 0;font-family:"Dado"; font-size:1.3em}
 .article-feature-blog .field-name-field-image-video{ border:10px solid #120000}
+.article-feature-blog .field-name-field-image-video img{ display:block}
 
 /* view */
 .view-microblog .feature_blog{ background:#120000; padding:10px; max-width:525px; margin-bottom:20px; overflow:hidden}
@@ -644,11 +650,10 @@ ul.quicktabs-tabs.quicktabs-style-navlist li { margin-left: 0em; font-family: "D
 
 @media only screen and (max-width:800px) {
 	
-.article-feature-blog .field.field-name-title-field,
-.article-feature-blog .field.field-name-body,
-.article-feature-blog .field.field-name-field-artwork-reference,
-.article-feature-blog .field:not(.field-name-field-image){ float:none; width:100%; margin:0}
+.article-feature-blog.ds-2col-stacked .group-right,
+.article-feature-blog.ds-2col-stacked .group-left{ float:none; width:100%; margin:0}
 .article.article-feature-blog h1{ font-size:2em;  }	
+.article-feature-blog ul.links{ position:relative; bottom:0}
 	
 }
 

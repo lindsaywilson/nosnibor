@@ -49,7 +49,7 @@
 						<div class="panel" style="background-image:url('.$field->content.')">
 						<div class="inner">
 							<div class="text">
-								<div class="heading">'.$title_field.'</div>
+								<div class="heading"><a href="'.$field_link_1.'">'.$title_field.'</a></div>
 								<div class="body">'.$body.'
 									<p class="readmore">'.$field_link.'</p>
 								</div>

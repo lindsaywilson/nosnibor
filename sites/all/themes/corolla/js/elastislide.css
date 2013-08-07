@@ -1,0 +1,92 @@
+/* Elastislide Style */
+.artwork-info{ display:none}
+
+.es-carousel-wrapper{
+	position:relative;
+}
+.es-carousel{
+	overflow:hidden;
+	max-width: 980px;
+	margin: 0px auto; 
+}
+.es-carousel ul{
+	display:none;
+}
+
+.es-carousel ul li.es-carousel-row-start { padding-left: 6px !important; }
+.es-carousel ul li.es-carousel-row-end { padding-right: 6px !important; }
+
+.es-carousel ul li{ 
+	height:100%; 
+	float:left; 
+	display:block; 
+}
+
+.es-carousel ul li a{
+	display:block;
+}
+.es-carousel ul li a img:hover{ opacity:0.8}
+.artwork-item:hover{ background-image:none}
+.view-artwork-gallery{ margin-bottom:20px}
+.artwork-item { display:block; padding: 40px 10px 10px 10px; margin: 1px 0.5px; background: #120000 url(../css/images/miniloader.png) no-repeat 50% 50%; text-transform: uppercase; letter-spacing: -1px; font-family: "Apple2"; font-size: 8px; font-weight: bold; letter-spacing: -2px; color: #FBC607; font-text-shadow: 0px 0px 6px #E13412; }
+
+/* Apple 2 font issue on Firefox */
+@-moz-document url-prefix() {
+    .artwork-item {
+        font-family: Arial; letter-spacing: 0px; font-weight: normal; 
+    }
+}
+
+.artwork-item a img { margin-bottom: 15px; }
+
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+	
+}
+.es-nav span{
+	position:absolute;
+	top:50%;
+	left:40px;
+	width: 67px; 
+	height: 29px;
+	
+	cursor:pointer;
+
+}
+.es-nav span.es-nav-next{
+	right:40px;
+	left:auto;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}
+.es-nav div{
+	text-indent:-9000px;
+	opacity:0.5
+}
+.es-nav div:hover{ opacity:1}
+.es-nav  .arrow{ height:29px}
+.es-nav span.es-nav-prev .arrow{
+background: url(../css/images/page_prev.png) left top no-repeat; 
+}
+.es-nav span.es-nav-next .arrow{
+background: url(../css/images/page_next.png) right top no-repeat; 
+}
+.totalImg, .countImg{ position:absolute; top:20px; left:0; color:#454543; font-family:"Dado",Arial; font-size:1.6em}
+.countImg{ top:-25px;}
+.es-nav span.es-nav-prev .totalImg,
+.es-nav span.es-nav-prev .countImg{ left:auto; right:17px}
+
+@media only screen 
+and (max-width:480px) {
+.es-carousel{
+	max-width: 290px;
+ }
+ 
+ .es-nav span{ left: 0px; width: 7%; }
+ .es-nav span.es-nav-next { right: 0px; }
+}
+

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Home Hero Feature feature.
+ */
+
+include_once 'home_hero_feature.features.inc';

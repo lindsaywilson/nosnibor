@@ -712,6 +712,15 @@ and (max-width:480px) {
   .quicktabs_main.quicktabs-style-navlist { width: 100%; }
   .skip-video { display: none; }
   
+  .view-microblog .feature_blog .views-field-field-image img,
+  .view-instagrams img{ float:none; width:100%; max-width:100%}
+  .view-microblog .feature_blog .views-field-title, 
+  .view-microblog .feature_blog .views-field-view-node, 
+  .view-microblog .feature_blog .views-field-created, 
+  .view-microblog .feature_blog .views-field-path,
+  .view-instagrams .views-field-caption, 
+  .view-instagrams .views-field-link{ padding-left:0; width:auto}
+  
 }
 
 		

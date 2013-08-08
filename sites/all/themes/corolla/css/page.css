@@ -670,7 +670,7 @@ ul.quicktabs-tabs.quicktabs-style-navlist li { margin-left: 0em; font-family: "D
 
 @media only screen 
 and (max-width:480px) {
-  body { overflow-x: hidden; }
+
   /*
   .region-header { float: right !important; width: 200px !important;  }
   .region-header .block ul li { float: left !important; width: 45% !important; } 

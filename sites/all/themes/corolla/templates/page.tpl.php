@@ -11,7 +11,7 @@
   <div id="header-wrapper"><div class="container clearfix">
     <header class="clearfix<?php print $linked_site_logo ? ' with-logo' : ''; ?>" role="banner">
       <div id="branding">
-          <div id="logo"><a href="<?php print $base_path; ?>" title="Home page"><img src="<?php print base_path() . path_to_theme(); ?>/logo.png" alt="Pink Bear logo"></a></div>
+          <div id="logo"><a href="<?php print $base_path; ?>" title="Home page"><img src="<?php print base_path() . path_to_theme(); ?>/logo.png" alt="Paul Robinson"></a></div>
 
         <?php if ($site_name || $site_slogan): ?>
           <hgroup<?php if (!$site_slogan && $hide_site_name): ?> class="<?php print $visibility; ?>"<?php endif; ?>>

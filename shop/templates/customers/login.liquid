@@ -1,8 +1,8 @@
 {% layout settings.customer_layout %}
 <div id="customer-login">
   <div class="row">
-    <div id="login" class="span7">
-      <h2 class="title">Login</h2>
+    <div id="login" class="row">
+      <h1 class="title">Login</h1>
 
       {% form 'customer_login' %}
       {{ form.errors | default_errors }}
@@ -18,13 +18,13 @@
 
       <div class="action_bottom">
         <input class="btn" type="submit" value="Sign In" />
-        <span class="note">or <a href="{{ shop.url }}">Return to Store</a></span>
+        or <a href="{{ shop.url }}">Return to Store</a>
       </div>
       {% endform %}
     </div>
     
-    <div id="recover-password" style="display:none;" class="span7">
-      <h2>Reset Password</h2>
+    <div id="recover-password" style="display:none;" class="row">
+      <h1>Reset Password</h1>
       <p class="note">We will send you an email to reset your password.</p>
 
       {% form 'recover_customer_password' %}
@@ -39,8 +39,8 @@
     </div>
     
     {% if shop.checkout.guest_login %}
-    <div id="guest" class="span5">
-      <h2>Guest Login</h2>
+    <div id="guest" class="row">
+      <h1>Guest Login</h1>
       {% form 'guest_login' %}
       <input class="btn" type="submit" value="Continue as Guest" />
       {% endform %}

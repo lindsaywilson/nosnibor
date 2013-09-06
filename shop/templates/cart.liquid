@@ -1,18 +1,14 @@
 <div id="cart">
-  
+
   <!-- Begin empty cart -->
   {% if cart.item_count == 0 %}
-  <div class="row">
-    <div class="span12 expanded-message">
+  
       <h2>Your cart is empty</h2>
-    </div>
-  </div>
+
   <!-- End empty cart -->
   
   <!-- Begin cart -->
   {% else %}
-  <div class="row">
-    <div class="span12">
       <h1>Your cart</h1>
 
       <form action="/cart" method="post" id="cartform">
@@ -21,7 +17,6 @@
             <tr>
               <th class="image">&nbsp;</th>
               <th class="item">&nbsp;</th>
-              <th class="qty">Quantity</th>
               <th class="price">Price</th>
               <th class="remove">&nbsp;</th>
             </tr>
@@ -44,16 +39,12 @@
                   {% endif %}
                 </a>
               </td>
-              <td class="qty">
-                <input type="text" size="4" name="updates[]" id="updates_{{ item.id }}" value="{{ item.quantity }}" onfocus="this.select();" class="tc item-quantity" />
-              </td>
               <td class="price">{{ item.line_price | money }}</td>
               <td class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0" class="cart">Remove</a></td>
             </tr>
             {% endfor %}
             <tr class="summary">
               <td class="image">&nbsp;</td>
-              <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td class="price"><span class="total"><strong>{{ cart.total_price | money }}</strong></span></td>
               <td>&nbsp;</td>
@@ -88,7 +79,7 @@
         {% endif %}
 
       </form>
-    </div>
+
   {% if cart.item_count == 0 and settings.featured_products != "" %}
   <div class="cart-featured">
     <h3 class="featured-cart-title">Featured Items</h3>
@@ -97,7 +88,7 @@
   	{% endfor %}
   </div>
   {% endif %}
-</div>
+
   <!-- End cart -->
 </div> 
 

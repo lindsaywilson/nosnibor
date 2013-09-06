@@ -4,8 +4,8 @@
   <div class="row">
     <div class="span12">
       <h1 class="title clearfix">Account Details
-        <span class="note">{{ 'Logout' | customer_logout_link }}</span>
       </h1>
+	  <p class="btn">{{ 'Logout' | customer_logout_link }}</p>
     </div>
   </div>
 
@@ -40,7 +40,7 @@
     </div>
     
     <div id="customer_sidebar" class="span4">
-      <h2>{{ customer.name }}</h2>
+      <p class="white"><strong>{{ customer.name }}</strong></p>
       <p class="email note">{{ customer.email }}</p>
       <div class="address note">
         {% if customer.default_address != nil %}
